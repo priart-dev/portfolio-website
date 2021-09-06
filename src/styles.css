@@ -1,0 +1,150 @@
+:root {
+  --text-color: white;
+  --font-brand: "Kaushan Script", monospace;
+  --font-buttons: "Share Tech Mono", monospace;
+  --font-family: "Inter", sans-serif;
+  --font-titles: "Major Mono Display", monospace;
+  --gradient: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+}
+
+.about-box {
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+}
+
+.about-content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 50px;
+}
+
+.contact-link {
+  color: black;
+  font-weight: bold;
+  font-size: 2vmax;
+}
+
+.contact-link:hover {
+  background: white;
+  color: black;
+  cursor: pointer;
+}
+
+.default-link {
+  color: #f1f1f1;
+  text-decoration: underline;
+}
+
+.default-link:hover {
+  color: #f1f1f1;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px auto;
+  max-width: 700px;
+}
+
+.nav-bar {
+  font-family: var(--font-buttons);
+  font-size: 1.8vmax;
+  top: 0;
+}
+
+.nav-bar-brand {
+  font-family: var(--font-brand);
+  font-size: 3.3vmax;
+}
+
+.nav-links {
+  background-color: rgba(0, 0, 0, 0.2);
+  border: solid 2px white;
+  border-radius: 20px;
+  box-shadow: white 5px 3px 0px 0;
+  color: white;
+  cursor: pointer;
+  font-family: var(--font-buttons);
+  font-size: 3vmax;
+  min-width: 120px;
+  text-align: center;
+  text-decoration: none;
+  padding: 15px 18px 15px 18px;
+}
+
+.nav-links:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: solid 2px black;
+  box-shadow: black 5px 3px 0px 0;
+  color: black;
+}
+
+.nav-page {
+  margin: 0px 1px 40px 1px;
+}
+
+.projects-box {
+  background-color: rgba(0, 0, 0, 0.2);
+  flex: 1;
+  margin: 5px;
+  padding: 10px;
+}
+
+.projects-description {
+  flex: 1;
+  line-height: 1.5;
+}
+
+#contact {
+  text-align: center;
+  line-height: 0.8;
+}
+
+body {
+  background: var(--gradient);
+  color: var(--text-color);
+  font-family: var(--font-family);
+  hyphens: auto;
+}
+
+em {
+  font-style: normal;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+footer {
+  text-align: center;
+}
+
+h1,
+h2 {
+  font-family: var(--font-titles);
+  text-align: center;
+}
+
+h1 {
+  font-size: 5vmax;
+}
+
+h2 {
+  font-size: 2.5vmax;
+}
+
+h3 {
+  font-size: 2.7vmax;
+  font-weight: 600;
+  text-align: left;
+}
+
+@media (max-width: 700px) {
+  .about-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
